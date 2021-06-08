@@ -1,0 +1,19 @@
+// Blocks
+@import "./blocks/**/*.scss";
+
+$color: rgb(45, 199, 153);
+
+body {
+    background-color: $color;
+    transition: all 0.2s ease-in;
+}
+
+.checkbox-icon {
+    width: 48px;
+    height: 48px;
+    fill: #2dc254;
+}
+
+.checkbox-icon:hover {
+    fill: rgb(25, 0, 255);
+}
