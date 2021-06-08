@@ -3,9 +3,19 @@
   padding: 40px 0;
   background-color: #121210;
   color: #ffffff;
+  background-image: url("../img/bg/1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 1200px) {
+      background-image: url("../img/bg/1-1200.jpg");
+    }
+    @media (max-width: 750px) {
+      background-image: url("../img/bg/1-750.jpg");
+    }
+    @media (max-width: 420px) {
+      background-image: url("../img/bg/1-420.jpg");
+    }
 
   .title {
     font-weight: 800;
@@ -21,7 +31,7 @@
       font-size: 42px;
     }
     @media (max-width: 450px) {
-      font-size: 25px;
+      font-size: 25 px;
     }
     span {
       color: #a7e159;
