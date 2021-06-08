@@ -18,9 +18,6 @@ const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 
-const svgo = require('gulp-svgo');
-const svgSprite = require('gulp-svg-sprite');
-
 const imagemin = require('gulp-imagemin');
 
 sass.compiler = require('node-sass');
@@ -103,29 +100,6 @@ task('scripts:docs', () => {
     }
 );
 
-const svgoConfig = {
-	plugins: [
-		{
-			removeAttrs: { attrs: '(fill|stroke|style|width|height|data.*)' },
-		},
-	],
-};
-
-const svgSpriteConfig = {
-	mode: {
-		symbol: {
-			sprite: '../sprite.svg',
-		},
-	},
-};
-
-task('svg', () => {
-    return src(['./src/img/icons/**/*.svg', '!src/img/icons/sprite.svg'])
-        .pipe(svgo(svgoConfig))
-        .pipe(svgSprite(svgSpriteConfig))
-        .pipe(dest('./src/img/icons'));
-});
-
 task('copy:libs:build', () => {
 	return src('./src/libs/**/*')
 		.pipe(dest('./build/libs/'))
@@ -158,9 +132,8 @@ task('watch', () => {
     watch('./src/html/**/*.html', series('html:build'));
     watch('./src/scss/**/*.scss', series('styles:build'));
     watch('./src/js/**/*.js', series('scripts:build'));
-    watch(['./src/img/icons/**/*.svg', '!src/img/icons/sprite.svg'], series('svg'));
     watch('./src/libs/**/*', series('copy:libs:build'));
-    watch(['./src/img/**/*', '!src/img/icons/**/*'], series('copy:img:build'));
+    watch('./src/img/**/*', series('copy:img:build'));
 })
 
 task('server:build', () => {
@@ -183,7 +156,6 @@ task(
 	'default',
 	series(
 		'clean:build',
-		'svg',
 		parallel('html:build', 'styles:build', 'scripts:build', 'copy:img:build', 'copy:libs:build'),
 		parallel('server:build', 'watch')
 	)
@@ -193,7 +165,6 @@ task(
 	'docs',
 	series(
 		'clean:docs',
-		'svg',
 		parallel('html:docs', 'styles:docs', 'scripts:docs', 'copy:img:docs', 'copy:libs:docs'),
 		parallel('server:docs')
 	)
