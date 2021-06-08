@@ -112,13 +112,13 @@ task('copy:libs:docs', () => {
 });
 
 task('copy:img:build', () => {
-    return src(['./src/img/**/*', '!src/img/icons/**/*'])
+    return src('./src/img/**/*')
 		.pipe(dest('./build/img/'))
 		.pipe(browserSync.reload({ stream: true }));
 })
 
 task('copy:img:docs', () => {
-    return src(['./src/img/**/*', '!src/img/icons/**/*'])
+    return src('./src/img/**/*')
 		.pipe(
 			imagemin({
 				progressive: true,
