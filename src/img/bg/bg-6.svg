@@ -1,0 +1,43 @@
+<svg width="1440" height="736" viewBox="0 0 1440 736" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="736">
+<rect x="0.5" y="0.5" width="1439" height="735" fill="#C4C4C4" stroke="#ECE2CA"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M-495 -2.00098L3.79621 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-476 -2.00098L22.7962 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-457 -2.00098L42.8311 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-437 -2.00098L60.7614 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-419 -2.00098L79.7962 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-400 -2.00098L98.7962 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-381 -2.00098L118.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-361 -2.00098L137.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-342 -2.00098L158.866 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-321 -2.00098L177.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-302 -2.00098L196.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-283 -2.00098L215.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-264 -2.00098L233.761 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-246 -2.00098L253.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-226 -2.00098L272.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-207 -2.00098L292.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-187 -2.00098L310.761 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-169 -2.00098L329.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-150 -2.00098L348.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-131 -2.00098L368.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-111 -2.00098L387.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-92 -2.00098L407.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-35 -2.00098L462.761 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-17 -2.00098L481.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M2 -2.00098L501.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M42 -2.00098L540.796 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-72 -2.00098L424.726 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M61 -2.00098L560.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M22 -2.00098L521.831 977" stroke="#ECE2CA" stroke-width="2"/>
+<path d="M-55 -2.00098L444.831 977" stroke="#ECE2CA" stroke-width="2"/>
+</g>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="736">
+<rect width="1440" height="736" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask1)">
+<path d="M65 -30H295.422L878 1113H647.578L65 -30Z" fill="#FAF3E3"/>
+</g>
+</svg>
