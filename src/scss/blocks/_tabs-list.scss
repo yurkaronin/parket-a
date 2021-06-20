@@ -1,0 +1,32 @@
+/* tabs-list */
+.tabs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tabs-list__button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #aeaeae;
+  border: none;
+  border-bottom: 5px solid #aeaeae;
+  background-color: transparent;
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #000000;
+    color: #000000;
+  }
+}
