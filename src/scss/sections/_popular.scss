@@ -4,6 +4,7 @@
   background-image: url(../img/bg/bg-2.svg);
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: contain;
   overflow: hidden;
   .wrapper {
     display: grid;
@@ -24,4 +25,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.popular__button {
+  margin: 0 auto;
+  grid-column: span 2;
 }
