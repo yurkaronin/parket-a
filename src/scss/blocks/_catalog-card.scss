@@ -3,6 +3,9 @@
   max-width: 355px;
   width: 100%;
   position: relative;
+  @media (max-width: 1200px) {
+    max-width: 100%;
+  }
   img {
     width: 100%;
     display: block;

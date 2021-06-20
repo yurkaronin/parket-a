@@ -6,15 +6,26 @@
   background-position: top right;
   background-size: contain;
   overflow: hidden;
+  @media (max-width: 1200px) {
+    background-image: none;
+    background-color: #FAF3E3;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
     align-items: flex-start;
+    @media (max-width: 1400px) {
+      grid-template-columns: 1fr;
+    }
   }
   .title {
     max-width: 350px;
     margin-bottom: 35px;
+    @media (max-width: 1400px) {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -30,4 +41,7 @@
 .popular__button {
   margin: 0 auto;
   grid-column: span 2;
+  @media (max-width: 1400px) {
+    grid-column: initial;
+  }
 }

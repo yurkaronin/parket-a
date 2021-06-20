@@ -2,7 +2,12 @@
   padding: 50px 0 70px;
   background-image: url(../img/bg/bg-1.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   overflow: hidden;
+  @media (max-width: 1200px) {
+    background-image: none;
+    background-color: #ffffff;
+  }
   .subtitle {
     margin-bottom: 35px;
   }
@@ -20,13 +25,13 @@
   padding: 0;
   display: grid;
   gap: 30px;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 50px;
   @media (max-width: 1200px) {
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 1fr 1fr;
   }
   @media (max-width: 750px) {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -122,8 +127,15 @@
   max-width: 100%;
   opacity: 0;
   transition: all 0.4s ease-in-out;
+  @media (max-width: 1200px) {
+    opacity: 1;
+  }
   @media (max-width: 750px) {
-    display: block;
+    padding-right: 90px;
+  }
+  @media (max-width: 460px) {
+    padding-right: 0;
+    margin-bottom: 20px;
   }
   ul {
     text-decoration-line: underline;
@@ -143,6 +155,16 @@
   right: 30px;
   opacity: 0;
   transition: all 0.4s ease-in-out;
+  @media (max-width: 1200px) {
+    opacity: 1;
+  }
+  @media (max-width: 460px) {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin: 0 auto;
+    margin-right: 0;
+  }
   &:hover {
     background-color: #FFAD53;
     border-color: #000000;

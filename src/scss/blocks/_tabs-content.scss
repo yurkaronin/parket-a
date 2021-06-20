@@ -8,6 +8,19 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   display: none;
   margin-bottom: 60px;
+  @media (max-width: 1400px) {
+    grid-column: initial;
+  }
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 90px 30px;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tabs-content.is-active {
