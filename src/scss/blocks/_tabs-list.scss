@@ -25,7 +25,8 @@
   cursor: pointer;
   &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &.is-active {
     border-color: #000000;
     color: #000000;
   }

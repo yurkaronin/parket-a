@@ -132,132 +132,686 @@
       <div class="wrapper">
 
         <h2 class="title">Популярное</h2>
-
+        <!-- табы - переключение контента  -->
         <ul class="popular__tabs tabs-list">
-          <li class="tabs-list__item"><button class="tabs-list__button">Паркетная доска</button>
+          <li class="tabs-list__item">
+            <button class="tabs-list__button is-active" data-tab-name="tab-1">Паркетная доска</button>
           </li>
-          <li class="tabs-list__item"><button class="tabs-list__button">Ламинат</button>
+          <li class="tabs-list__item"><button class="tabs-list__button" data-tab-name="tab-2">Ламинат</button>
           </li>
-          <li class="tabs-list__item"><button class="tabs-list__button">Плитка-ПВХ</button>
+          <li class="tabs-list__item"><button class="tabs-list__button" data-tab-name="tab-3">Плитка-ПВХ</button>
           </li>
-          <li class="tabs-list__item"><button class="tabs-list__button">Пробка</button>
+          <li class="tabs-list__item"><button class="tabs-list__button" data-tab-name="tab-4">Пробка</button>
           </li>
-          <li class="tabs-list__item"><button class="tabs-list__button">Плинтус</button>
+          <li class="tabs-list__item"><button class="tabs-list__button" data-tab-name="tab-5">Плинтус</button>
           </li>
-          <li class="tabs-list__item"><button class="tabs-list__button">Ковровые</button>
+          <li class="tabs-list__item"><button class="tabs-list__button" data-tab-name="tab-6">Ковровые</button>
+          </li>
+        </ul>
+        <!-- Первый блок для таба №1 -->
+        <ul class="tabs-content is-active tab-1">
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/1.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">1Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/2.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/3.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/4.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
           </li>
         </ul>
 
-        <ul class="tabs-content">
-          <li class="tabs-content__item">
-            <article class="catalog-card">
-              <img src="img/catalog/pop/1.jpg" alt="" class="catalog-card__item" width="255" height="255">
+        <!-- Первый блок для таба №2 -->
+        <ul class="tabs-content tab-2">
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/1.jpg" alt="фото товара" width="255" height="255">
 
-              <div class="catalog-card__wrapper">
-
-                <div class="catalog-card__details">
-                  <div class="catalog-card__cell">
-                    <h3 class="catalog-card__title">Паркетная доска
-                      Орех Orchard (Фруктовый сад)
-                      Швейция</h3>
-                  </div>
-                  <div class="catalog-card__cell">
-                    <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
-                  </div>
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">2Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
                 </div>
-              </div>
-              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
-                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17"></a>
-
-              <ul class="catalog-card__label">
-                <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
-              </ul>
-            </article>
-          </li>
-          <li class="tabs-content__item">
-            <article class="catalog-card">
-              <img src="img/catalog/pop/1.jpg" alt="" class="catalog-card__item" width="255" height="255">
-
-              <div class="catalog-card__wrapper">
-
-                <div class="catalog-card__details">
-                  <div class="catalog-card__cell">
-                    <h3 class="catalog-card__title">Паркетная доска
-                      Орех Orchard (Фруктовый сад)
-                      Швейция</h3>
-                  </div>
-                  <div class="catalog-card__cell">
-                    <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
-                  </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
                 </div>
-              </div>
+              </div> <!-- .catalog-card__details -->
               <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
-                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17"></a>
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
 
-              <ul class="catalog-card__label">
-                <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
-              </ul>
-            </article>
-          </li>
-          <li class="tabs-content__item">
-            <article class="catalog-card">
-              <img src="img/catalog/pop/1.jpg" alt="" class="catalog-card__item" width="255" height="255">
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
 
-              <div class="catalog-card__wrapper">
-
-                <div class="catalog-card__details">
-                  <div class="catalog-card__cell">
-                    <h3 class="catalog-card__title">Паркетная доска
-                      Орех Orchard (Фруктовый сад)
-                      Швейция</h3>
-                  </div>
-                  <div class="catalog-card__cell">
-                    <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
-                  </div>
-                </div>
-              </div>
-              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
-                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17"></a>
-
-              <ul class="catalog-card__label">
-                <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
-              </ul>
-            </article>
-          </li>
-          <li class="tabs-content__item">
-            <article class="catalog-card">
-              <img src="img/catalog/pop/1.jpg" alt="" class="catalog-card__item" width="255" height="255">
-
-              <div class="catalog-card__wrapper">
-
-                <div class="catalog-card__details">
-                  <div class="catalog-card__cell">
-                    <h3 class="catalog-card__title">Паркетная доска
-                      Орех Orchard (Фруктовый сад)
-                      Швейция</h3>
-                  </div>
-                  <div class="catalog-card__cell">
-                    <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
-                  </div>
-                </div>
-              </div>
-              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
-                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17"></a>
-
-              <ul class="catalog-card__label">
-                <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
-                <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
-              </ul>
-            </article>
           </li>
 
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/2.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/3.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/4.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+        </ul>
+
+        <!-- Первый блок для таба №3 -->
+        <ul class="tabs-content tab-3">
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/1.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">3Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/2.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/3.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/4.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+        </ul>
+
+        <!-- Первый блок для таба №4 -->
+        <ul class="tabs-content tab-4">
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/1.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">4Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/2.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/3.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/4.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+        </ul>
+
+        <!-- Первый блок для таба №5 -->
+        <ul class="tabs-content tab-5">
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/1.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">5Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/2.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/3.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/4.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+        </ul>
+
+        <!-- Первый блок для таба №6 -->
+        <ul class="tabs-content tab-6">
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/1.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">6Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/2.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/3.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
+
+          <li class="tabs-content__item catalog-card">
+            <img class="catalog-card__photo" src="img/catalog/pop/4.jpg" alt="фото товара" width="255" height="255">
+
+            <div class="catalog-card__wrapper">
+              <div class="catalog-card__details">
+                <div class="catalog-card__cell">
+                  <h3 class="catalog-card__title">Паркетная доска
+                    Орех Orchard (Фруктовый сад) Швейция</h3>
+                </div>
+                <div class="catalog-card__cell">
+                  <p class="catalog-card__price"><del>600</del> 581 р/м<sup>2</sup></p>
+                </div>
+              </div> <!-- .catalog-card__details -->
+              <a class="catalog-card__link button" href="#">Подробнее<img class="catalog-card__icon"
+                  src="img/icons/heart.svg" alt="иконка сердца" width="19" height="17">
+              </a>
+            </div> <!-- .catalog-card__wrapper -->
+
+            <!-- лейблы -->
+            <ul class="catalog-card__label">
+              <li><img src="img/label/hit.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/sale.svg" alt="лейбл акции" width="45" height="45"></li>
+              <li><img src="img/label/new.svg" alt="лейбл акции" width="45" height="45"></li>
+            </ul>
+
+          </li>
         </ul>
 
       </div>

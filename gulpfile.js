@@ -55,6 +55,11 @@ task('html:docs', () => {
 		.pipe(dest('./docs/'));
 });
 
+task('fonts:build', () => {
+	return src('./src/fonts/**/*')
+		.pipe(dest('./build/fonts/'));
+});
+
 task('styles:build', () => {
 	return src(['./node_modules/normalize.css/normalize.css', './src/scss/main.scss'])
 		.pipe(sourcemaps.init())
@@ -130,6 +135,7 @@ task('copy:img:docs', () => {
 
 task('watch', () => {
     watch('./src/html/**/*.html', series('html:build'));
+    watch('./src/fonts/**/*', series('fonts:build'));
     watch('./src/scss/**/*.scss', series('styles:build'));
     watch('./src/js/**/*.js', series('scripts:build'));
     watch('./src/libs/**/*', series('copy:libs:build'));
@@ -156,7 +162,7 @@ task(
 	'default',
 	series(
 		'clean:build',
-		parallel('html:build', 'styles:build', 'scripts:build', 'copy:img:build', 'copy:libs:build'),
+		parallel('html:build', 'fonts:build', 'styles:build', 'scripts:build', 'copy:img:build', 'copy:libs:build'),
 		parallel('server:build', 'watch')
 	)
 );
@@ -165,7 +171,7 @@ task(
 	'docs',
 	series(
 		'clean:docs',
-		parallel('html:docs', 'styles:docs', 'scripts:docs', 'copy:img:docs', 'copy:libs:docs'),
+		parallel('html:docs', 'fonts:build', 'styles:docs', 'scripts:docs', 'copy:img:docs', 'copy:libs:docs'),
 		parallel('server:docs')
 	)
 );

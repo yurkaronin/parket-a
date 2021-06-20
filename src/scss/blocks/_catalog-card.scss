@@ -63,17 +63,16 @@
 
 .catalog-card__link {
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   border: #000000 2px solid;
   margin-top: -2px;
-  opacity: 0;
+  display: none;
 }
 
 .catalog-card:hover {
   .catalog-card__link {
-    opacity: 1;
+    display: flex;
   }
 }
 
