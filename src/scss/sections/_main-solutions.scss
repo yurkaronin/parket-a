@@ -1,0 +1,29 @@
+/* main-solutions */
+.main-solutions {
+  padding: $basic-padding;
+  position: relative;
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    background-image: url("../img/bg/bg-4.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.main-solutions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}

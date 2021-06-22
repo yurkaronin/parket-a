@@ -1,9 +1,9 @@
-.top-advantages {
+.main-advantages {
   background-color: #faf3e3;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
-.top-advantages__list {
+.main-advantages__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@
   }
 }
 
-.top-advantages__item {
+.main-advantages__item {
   max-width: 350px;
   width: 100%;
   display: flex;
@@ -30,7 +30,7 @@
   }
 }
 
-.top-advantages__icon {
+.main-advantages__icon {
   max-width: 52px;
   margin-right: 20px;
   display: block;
@@ -39,7 +39,7 @@
     margin-right: 0;
   }
 }
-.top-advantages__text {
+.main-advantages__text {
   max-width: 255px;
   @media (max-width: 360px) {
     text-align: center;

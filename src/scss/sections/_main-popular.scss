@@ -1,10 +1,10 @@
-/* popular */
-.popular {
-  padding: 70px 0 50px;
+/* main-popular */
+.main-popular {
+  padding: $basic-padding;
   overflow: hidden;
   position: relative;
   @media (max-width: 1200px) {
-    background-color: #FAF3E3;
+    background-color: #faf3e3;
   }
   &::before {
     width: 100%;
@@ -14,7 +14,7 @@
     left: 50%;
     content: "";
     display: block;
-    background-image: url(../img/bg/bg-2.svg);
+    background-image: url("../img/bg/bg-2.svg");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
@@ -33,9 +33,8 @@
       grid-template-columns: 1fr;
     }
   }
-  .title {
+  .section-header {
     max-width: 350px;
-    margin-bottom: 35px;
     @media (max-width: 1400px) {
       max-width: 100%;
       margin-bottom: 0;
@@ -43,16 +42,7 @@
   }
 }
 
-.popular__tabs-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.popular__button {
+.main-popular__button {
   margin: 0 auto;
   grid-column: span 2;
   @media (max-width: 1400px) {

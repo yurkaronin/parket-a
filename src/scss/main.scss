@@ -1,100 +1,14 @@
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-}
+// Variables
+@import "variables.scss";
 
-*,
-::before,
-::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+// local fonts
+@import "fonts.scss";
 
-*:focus-visible {
-  outline-color: #ff3636;
-}
-
-img {
-  max-width: 100%;
-}
-
-a,
-button,
-input {
-  font-family: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 120%;
-  background-color: #ffffff;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  white-space: nowrap;
-  border: 0;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-}
-
-/* raleway-regular - latin_cyrillic */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/raleway-v19-latin_cyrillic-regular.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* raleway-500 - latin_cyrillic */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  src: local(''),
-       url('../fonts/raleway-v19-latin_cyrillic-500.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* raleway-700 - latin_cyrillic */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/raleway-v19-latin_cyrillic-700.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* raleway-800 - latin_cyrillic */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
-  src: local(''),
-       url('../fonts/raleway-v19-latin_cyrillic-800.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* raleway-italic - latin_cyrillic */
-@font-face {
-  font-family: 'Raleway';
-  font-style: italic;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/raleway-v19-latin_cyrillic-italic.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+// basic style
+@import "basic-style.scss";
 
 // Blocks
 @import "./blocks/**/*.scss";
+
+// Sections
 @import "./sections/**/*.scss";
