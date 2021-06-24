@@ -1,0 +1,32 @@
+/* main-advantages */
+.main-advantages {
+  background-color: #faf3e3;
+  padding: 70px 0;
+}
+
+.main-advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  @media (max-width: 780px) {
+    grid-template-columns: auto;
+  }
+  .advantages-item {
+    max-width: 350px;
+    @media (max-width: 780px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 360px) {
+      flex-direction: column;
+    }
+  }
+  .advantages-item__text {
+    max-width: 255px;
+  }
+}
+
+

@@ -1,0 +1,30 @@
+.advantages-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 780px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }
+}
+
+.advantages-item__icon {
+  max-width: 52px;
+  margin-right: 20px;
+  display: block;
+  @media (max-width: 360px) {
+    max-width: 42px;
+    margin-right: 0;
+  }
+}
+.advantages-item__text {
+  color: #000000;
+  font-size: 16px;
+  margin: 0;
+  @media (max-width: 360px) {
+    text-align: center;
+  }
+}
