@@ -1,0 +1,131 @@
+/* main-showroom */
+.main-showroom {
+  padding: $basic-padding;
+  position: relative;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: flex-start;
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .section-header {
+    margin-bottom: 0;
+    padding-right: 145px;
+    @media (max-width: 1550px) {
+      padding-right: 0;
+    }
+  }
+  &::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    background-image: url(../img/bg/bg-6.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+}
+
+.main-showroom__slider {
+  grid-column: span 2;
+  max-width: 100%;
+  @media (max-width: 900px) {
+    grid-column: initial;
+  }
+}
+
+.custom-slider__navigation {
+  top: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 160px;
+  width: 100%;
+  right: 0;
+  position: relative;
+  margin: 0 auto;
+  margin-right: 0;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: initial;
+  width: 80px;
+  padding: 20px;
+  border: 2px solid #000000;
+  margin-top: 0;
+  height: auto;
+
+  &::after {
+    display: none;
+  }
+  &::before {
+    content: "";
+    width: 17px;
+    height: 14px;
+    display: block;
+    background-image: url("../img/icons/slider-arrow-r.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+
+  }
+}
+
+.swiper-button-prev {
+  &::before {
+    background-image: url("../img/icons/slider-arrow-l.svg");
+
+  }
+}
+
+.custom-slider__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.custom-slider__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: none;
+  @media (max-width: 900px) {
+    display: flex;
+  }
+}
+
+.main-showroom .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #fa921f;
+  font-size: 18px;
+  padding: 16px;
+}
