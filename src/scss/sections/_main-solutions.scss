@@ -13,6 +13,7 @@
     background-image: url("../img/bg/bg-4.svg");
     background-repeat: no-repeat;
     z-index: -1;
+    background-size: contain;
     @media (max-width: 1200px) {
       display: none;
     }

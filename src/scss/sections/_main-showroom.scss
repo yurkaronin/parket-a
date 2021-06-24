@@ -70,6 +70,11 @@
   border: 2px solid #000000;
   margin-top: 0;
   height: auto;
+  transition: all 0.4s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: #fa921f;
+  }
 
   &::after {
     display: none;
@@ -106,6 +111,9 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  @media (max-width: 900px) {
+    height: 300px;
+  }
 }
 
 .swiper-pagination {

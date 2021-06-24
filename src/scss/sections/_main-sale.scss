@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-position: top right;
     z-index: -1;
+    background-size: contain;
     @media (max-width: 1200px) {
       display: none;
     }

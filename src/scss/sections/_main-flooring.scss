@@ -12,7 +12,7 @@
     display: block;
     background-image: url("../img/bg/bg-3.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
     @media (max-width: 1200px) {
       display: none;
