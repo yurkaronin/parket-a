@@ -32,10 +32,10 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".mySwiper__next",
     prevEl: ".mySwiper__prev",
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -68,10 +68,10 @@ var swiper2 = new Swiper(".mySwiper-2", {
     nextEl: ".mySwiper-2__next",
     prevEl: ".mySwiper-2__prev",
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -86,12 +86,6 @@ var swiper2 = new Swiper(".mySwiper-2", {
       slidesPerView: 1,
       spaceBetween: 20
     },
-    // when window width is >= 480px
-    // 600: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 30
-    // },
-    // when window width is >= 640px
     900: {
       slidesPerView: 2,
       spaceBetween: 40

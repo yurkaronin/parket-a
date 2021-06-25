@@ -1,0 +1,17 @@
+/* main-consultation */
+.main-consultation {
+  padding: $basic-padding;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 90px;
+  }
+}
+
+.main-consultation__form {
+  grid-column: span 2;
+}
+
+.main-consultation__list{
+  list-style-image: url("../img/icons/list-item.svg");
+}
