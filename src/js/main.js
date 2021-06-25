@@ -29,8 +29,8 @@ tab();
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
-    nextEl: ".mySwiper__next",
-    prevEl: ".mySwiper__prev",
+    nextEl: ".mySwiper-next",
+    prevEl: ".mySwiper-prev",
   },
   autoplay: {
     delay: 2500,
@@ -65,8 +65,8 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper-2", {
   navigation: {
-    nextEl: ".mySwiper-2__next",
-    prevEl: ".mySwiper-2__prev",
+    nextEl: ".mySwiper-2-next",
+    prevEl: ".mySwiper-2-prev",
   },
   autoplay: {
     delay: 2500,
