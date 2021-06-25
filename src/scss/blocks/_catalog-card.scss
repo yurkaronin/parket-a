@@ -1,6 +1,7 @@
 /* catalog-card */
 .catalog-card {
-  max-width: 355px;
+  // max-width: 355px;
+  max-width: 100%;
   width: 100%;
   position: relative;
   @media (max-width: 1200px) {
@@ -9,6 +10,7 @@
   img {
     width: 100%;
     display: block;
+    height: auto;
   }
 }
 
@@ -22,21 +24,22 @@
 }
 
 .catalog-card__details {
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 
 .catalog-card__title {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 130%;
   color: #000000;
   margin: 0;
   margin-bottom: 15px;
+
 }
 
 .catalog-card__cell {
   border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
   padding: 15px 25px;
   background-color: #ffffff;
   color: #000000;
@@ -44,6 +47,9 @@
     border-top: none;
     border-bottom: none;
     padding-right: 65px;
+    @media (max-width: 900px) {
+      padding-right: 25px;
+    }
   }
   &:last-child {
     border-bottom: none;
@@ -68,7 +74,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  border: #000000 2px solid;
+  border: #000000 1px solid;
   margin-top: -2px;
   position: absolute;
   display: none;

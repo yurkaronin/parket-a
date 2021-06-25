@@ -29,13 +29,13 @@ tab();
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".mySwiper__next",
+    prevEl: ".mySwiper__prev",
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -58,6 +58,42 @@ var swiper = new Swiper(".mySwiper", {
     // when window width is >= 640px
     900: {
       slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
+});
+
+var swiper2 = new Swiper(".mySwiper-2", {
+  navigation: {
+    nextEl: ".mySwiper-2__next",
+    prevEl: ".mySwiper-2__prev",
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    // 600: {
+    //   slidesPerView: 2,
+    //   spaceBetween: 30
+    // },
+    // when window width is >= 640px
+    900: {
+      slidesPerView: 2,
       spaceBetween: 40
     }
   }
