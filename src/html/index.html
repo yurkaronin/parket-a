@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <!-- fancybox CSS-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
@@ -26,11 +26,14 @@
     @@include('sections/main-popular.html')
     @@include('sections/main-flooring.html')
     @@include('sections/main-solutions.html')
-    @@include('sections/main-sale.html')
+    <!-- @@include('sections/main-sale.html')
     @@include('sections/main-showroom.html')
-    @@include('sections/main-collections.html')
+    @@include('sections/main-collections.html') -->
     @@include('sections/main-consultation.html')
-    @@include('sections/main-useful.html')
+    <div class="decorate-wrapper">
+      @@include('sections/main-useful.html')
+      @@include('sections/main-portfolio.html')
+    </div>
   </main>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
