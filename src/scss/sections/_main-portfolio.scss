@@ -1,7 +1,7 @@
 /* main-portfolio  */
 .main-portfolio {
   padding: $basic-padding;
-  background-color: #FAF3E3;
+  background-color: #faf3e3;
   color: #000000;
   @media (max-width: 1200px) {
     padding: 35px 0 45px;
@@ -10,9 +10,20 @@
     z-index: 2;
     position: relative;
   }
+}
 
-  .main-solutions__list {
-    margin-bottom: 0;
+.main-portfolio__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 0;
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
   }
-
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
 }
