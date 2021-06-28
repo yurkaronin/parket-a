@@ -4,6 +4,7 @@
   position: relative;
   @media (max-width: 1200px) {
     background-color: #faf3e3;
+    padding: 35px 0 45px;
   }
   &::before {
     width: 100%;
@@ -32,7 +33,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
   margin-bottom: 60px;
-  margin-bottom: 120px;
+  margin-bottom: 90px;
   @media (max-width: 1400px) {
     grid-column: initial;
   }

@@ -1,0 +1,36 @@
+<!-- форма записи на замер  -->
+<section class="main-form">
+  <div class="wrapper">
+    <div class="section-header">
+      <h2 class="title">Запишитесь на замеры</h2>
+      <p class="subtitle">Время и дату согласуем по телефону. В удобное для вас время. При заказе через сайт выезд
+        специалиста и замер - бесплатно!</p>
+        <a class="link" href="#">Посмотреть прайс</a>
+    </div>
+    <div class="main-form__wrapper">
+      <form class="custom-form" action="#" method="post">
+        <!-- вид покрытия  -->
+        <select class="custom-form__area" name="hero[]">
+          <option value="Чебурашка">Ламинат</option>
+          <option>Половые доски</option>
+          <option value="Линолеум">Линолеум</option>
+          <option value="Покрытие пола из пробки">Покрытие пола из пробки</option>
+        </select>
+        <!-- дата  -->
+        <input type="date" class="custom-form__area" name="phone">
+
+        <!-- имя  -->
+        <input class="custom-form__area" type="text" name="name" placeholder="Ваше имя">
+        <!-- телефон  -->
+        <input type="tel" class="custom-form__area" name="phone" placeholder="Ваш номер телефона">
+
+        <button class="custom-form__button button" type="submit">Записаться</button>
+      </form>
+    </div>
+
+    <div class="main-form__footer">
+      <p class="subtitle">Ознакомьтесь с нашим прайсом</p>
+      <a class="link" href="#">Посмотреть прайс</a>
+    </div>
+  </div>
+</section>

@@ -2,6 +2,9 @@
 .main-flooring {
   padding: $basic-padding;
   position: relative;
+  @media (max-width: 1200px) {
+    padding: 35px 0 45px;
+  }
   &::before {
     width: 100%;
     height: 100%;
@@ -41,6 +44,10 @@
   @media (max-width: 750px) {
     grid-template-columns: 1fr;
   }
+}
+
+.main-flooring__item {
+  overflow: hidden;
 }
 
 .main-flooring__item:first-child,

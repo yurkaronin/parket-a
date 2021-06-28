@@ -1,5 +1,8 @@
 .section-header {
   margin-bottom: 50px;
+  .subtitle {
+    margin: 0;
+  }
   @media (max-width: 1200px) {
     margin-bottom: 25px;
   }

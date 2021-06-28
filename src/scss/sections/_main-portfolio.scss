@@ -3,11 +3,16 @@
   padding: $basic-padding;
   background-color: #FAF3E3;
   color: #000000;
+  @media (max-width: 1200px) {
+    padding: 35px 0 45px;
+  }
   .wrapper {
     z-index: 2;
     position: relative;
   }
 
-  /* блок с работами  */
+  .main-solutions__list {
+    margin-bottom: 0;
+  }
 
 }

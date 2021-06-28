@@ -1,6 +1,9 @@
 /* main-first */
 .main-first {
   padding: $basic-padding;
+  @media (max-width: 1200px) {
+    padding: 35px 0 45px;
+  }
   background-color: #121210;
   color: #ffffff;
   background-image: url("../img/bg/1.jpg");
@@ -16,14 +19,17 @@
   @media (max-width: 420px) {
     background-image: url("../img/bg/1-420.jpg");
   }
+  .section-header {
+    margin-bottom: 0;
+  }
 
   .title {
     font-weight: 800;
     font-size: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     max-width: 910px;
     color: #ffffff;
-    line-height: 110%;
+    line-height: 103%;
     @media (max-width: 800px) {
       font-size: 50px;
     }
@@ -45,7 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     li {
-      max-width: 255px;
+      max-width: 240px;
       width: 100%;
       font-weight: 500;
       font-size: 16px;

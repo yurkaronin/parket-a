@@ -1,17 +1,17 @@
 /* catalog-card */
 .catalog-card {
-  // max-width: 355px;
   max-width: 100%;
   width: 100%;
   position: relative;
   @media (max-width: 1200px) {
     max-width: 100%;
   }
-  img {
-    width: 100%;
+}
+
+.catalog-card__photo {
+  width: 100%;
     display: block;
     height: auto;
-  }
 }
 
 .catalog-card__wrapper {
@@ -24,7 +24,7 @@
 }
 
 .catalog-card__details {
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 
 .catalog-card__title {
@@ -61,7 +61,6 @@
   font-size: 24px;
   line-height: 120%;
   color: #000000;
-  text-align: center;
   margin: 0;
   del {
     font-size: 16px;
